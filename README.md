@@ -42,7 +42,7 @@ ADR: ECS Fargate replacing ECS EC2
 ![ESP Sandbox environment](./ref/pipeline.png)
 
 ### Python comparison tool
-- SRE team developed a python script that would generate a report comparing the cost of the infrastucture if AWS Fargate were to be implemented
+- SRE team developed a python script that would generate a report comparing the cost of the infrastructure if AWS Fargate were to be implemented
 - [Source to tool](./python-tool/README.md) 
 
 # Status 
@@ -52,5 +52,5 @@ ADR: ECS Fargate replacing ECS EC2
 
 Consequences 
 - SRE and developer are working collaboratively to push the performance of the infrastucture.
-- Things that are being considered are: Scalability, Latency, High Availability and Fault Tolerance of the system.
-- As of April 2022, both SRE and developers find that it's harder to move from one working and proven platform to a unknown, unproven platform. Because of this, and due to our commitments to our SLA, we are testing the AWS Fargate to the fullest extend.
+- In general, we consider the following: Scalability, Latency, High Availability and Fault Tolerance of the system.
+- As of April 2022, both SRE and developers find that it's harder to move from one working and proven platform to an unknown, unproven platform. Because of this, and due to our commitments to our SLA, we are testing the AWS Fargate to the fullest extend.
