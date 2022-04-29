@@ -9,7 +9,7 @@ ADR: ECS Fargate replacing ECS EC2
 
 # Decision 
 - Managing the EC2 instances we trivial when the number of services were low. As the project got bigger, we found it difficult to scale the EC2 instances proportionally to the demand of the users. 
-- In 2021, the cost of AWS ECS Fargate was slightly more expensive than AWS ECS EC2. But the labor cost of managing the EC2 instances were also high. It may pose pose a security risk if the SRE team does not patch or keep the EC2 instances up-to-date. 
+- In 2021, the cost of AWS ECS Fargate was slightly more expensive than AWS ECS EC2. But the labor cost of managing the EC2 instances were also high. It may pose a security risk if the SRE team does not patch or keep the EC2 instances up-to-date. 
 - The SRE did a cost analysis comparing both options. SRE team presented the advantages and disadvantages to the development team.
 
 | Considerations | AWS ECS Fargate | AWS ECS EC2 |
