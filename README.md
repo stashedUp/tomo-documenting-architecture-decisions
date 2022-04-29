@@ -42,7 +42,7 @@ ADR: ECS Fargate replacing ECS EC2
 
 # Status 
 - Proposed (April 2022)
-- SRE team and developer are actively testing the application's performance in the AWS EC2 Fargate implementation (April 2022)
+- Since the implementation of AWS Fargate in our testing environment (ESP Sandbox) - the SRE team and developers are actively testing the application's performance in the AWS EC2 Fargate implementation (April 2022)
 - Operational cost and labor cost are still being tracked (April 2022)
 
 Consequences 
