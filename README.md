@@ -36,8 +36,8 @@ ADR: ECS Fargate replacing ECS EC2
 
 ### ESP Sandbox environment (October 2021)
 - SRE team decided to launch a brand new environment to test the application on AWS Fargate - ESP sandbox. 
-- On this environment, both SRE and developer can fine tune the system to match the performance in Production 
-- SRE added a deployment job parallel to the main deployment pipeline
+- On this environment, both SRE and developer can fine tune the system to match the performance in Production.
+- SRE added a deployment job parallel to the main deployment pipeline.
 
 ### Python comparison tool
 - SRE team developed a python script that would generate a report comparing the cost of the infrastucture if AWS Fargate were to be implemented
@@ -45,10 +45,10 @@ ADR: ECS Fargate replacing ECS EC2
 
 # Status 
 - Proposed (April 2022)
-- Since the implementation of AWS Fargate in our testing environment (ESP Sandbox) - the SRE team and developers are actively testing the application's performance in the AWS EC2 Fargate implementation (April 2022)
-- Operational cost and labor cost are still being tracked (October 2021 - April 2022)
+- Since the implementation of AWS Fargate in our testing environment (ESP Sandbox) - the SRE team and developers are actively testing the application's performance in the AWS EC2 Fargate.implementation (April 2022).
+- Operational cost and labor cost are still being tracked (October 2021 - April 2022).
 
 Consequences 
-- SRE and developer are working collaboratively to push the performance of the infrastucture
-- Things that are being considered are: Scalability, Latency, High Availability and Fault Tolerance of the system
-- As of April 2022, both SRE and developers find that it's harder to move from one working and proven platform to a unknown, unproven platform. Because of this, and due to our commitments to our SLA, we are testing the AWS Fargate to the fullest extend
+- SRE and developer are working collaboratively to push the performance of the infrastucture.
+- Things that are being considered are: Scalability, Latency, High Availability and Fault Tolerance of the system.
+- As of April 2022, both SRE and developers find that it's harder to move from one working and proven platform to a unknown, unproven platform. Because of this, and due to our commitments to our SLA, we are testing the AWS Fargate to the fullest extend.
