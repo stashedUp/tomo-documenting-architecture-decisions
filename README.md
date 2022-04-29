@@ -39,6 +39,9 @@ ADR: ECS Fargate replacing ECS EC2
 - On this environment, both SRE and developer can fine tune the system to match the performance in Production 
 - SRE added a deployment job parallel to the main deployment pipeline
 
+### Python comparison tool
+- SRE team developed a python script that would generate a report comparing the cost of the infrastucture if AWS Fargate were to be implemented
+- [Source to tool](./python-tool/README.md) 
 
 # Status 
 - Proposed (April 2022)
