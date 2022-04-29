@@ -50,7 +50,10 @@ ADR: ECS Fargate replacing ECS EC2
 - Since the implementation of AWS Fargate in our testing environment (ESP Sandbox) - the SRE team and developers are actively testing the application's performance in the AWS EC2 Fargate.implementation (April 2022).
 - Operational cost and labor cost are still being tracked (October 2021 - April 2022).
 
-Consequences 
+# Consequences 
 - SRE and developer are working collaboratively to push the performance of the infrastucture.
 - In general, we consider the following: Scalability, Latency, High Availability and Fault Tolerance of the system.
 - As of April 2022, both SRE and developers find that it's harder to move from one working and proven platform to an unknown, unproven platform. Because of this, and due to our commitments to our SLA, we are testing the AWS Fargate to the fullest extend.
+
+# Note:
+This is NOT my official repo. This repo is used testing and job search purposes only. My official repo is: https://github.com/warrensbox
