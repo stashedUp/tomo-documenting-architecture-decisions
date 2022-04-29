@@ -6,7 +6,7 @@ ADR: ECS Fargate replacing ECS EC2
 - In 2017, AWS introduced Fargate, Fargate is a AWS managed cluster - meaning the SRE team will not have to manage and maintain the EC2 instances. The introductory price for ECS Fargate was expensive back then. Also, we only had 2 services running in the cluster. The team, decided to continue managing and supporting the EC2 instances for the ECS cluster.
 - In 2020, AWS offered a special discount to Pearson to use AWS Fargate (AWS managed cluster). The number of services for Eportfolio also increased from 2 to 7. The number of task per service also increased significantly. 
 
-
+![Services and task](./ref/present-state.png)
 # Decision 
 - Managing the EC2 instances we trivial when the number of services were low. As the project got bigger, we found it difficult to scale the EC2 instances proportionally to the demand of the users. 
 - In 2021, the cost of AWS ECS Fargate was slightly more expensive than AWS ECS EC2. But the labor cost of managing the EC2 instances were also high. It may pose a security risk if the SRE team does not patch or keep the EC2 instances up-to-date. 
@@ -38,6 +38,8 @@ ADR: ECS Fargate replacing ECS EC2
 - SRE team decided to launch a brand new environment to test the application on AWS Fargate - ESP sandbox. 
 - On this environment, both SRE and developer can fine tune the system to match the performance in Production.
 - SRE added a deployment job parallel to the main deployment pipeline.
+
+![ESP Sandbox environment](./ref/pipeline.png)
 
 ### Python comparison tool
 - SRE team developed a python script that would generate a report comparing the cost of the infrastucture if AWS Fargate were to be implemented
