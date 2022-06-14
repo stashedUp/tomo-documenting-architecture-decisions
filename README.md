@@ -1,4 +1,4 @@
-# Title
+# Title - ECS Fargate replacing ECS EC2
 ADR: ECS Fargate replacing ECS EC2
 
 # Context
